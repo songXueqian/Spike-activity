@@ -178,12 +178,6 @@
     self.redImage.backgroundColor = [UIColor redColor];
     self.redImage.alpha = 0.4;
     [self.view addSubview:self.redImage];
-    
-    
-    
-    
-    
-    
 }
 
 
