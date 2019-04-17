@@ -107,8 +107,8 @@
     
     
     NSMutableArray *dataArray = [NSMutableArray array];
-    
-    for (int a = 0; a < self.viewArray.count; a++) {
+
+ for (int a = 0; a < self.viewArray.count; a++) {
         // a >= 8 当取到 @"正在疯抢" 以后的时间时，把它们放到dataArray中
         if (a >= g) {
             [dataArray addObject:[self.viewArray objectAtIndex:a]];
@@ -117,7 +117,7 @@
     
     //g = 8  从self.viewArray数组中第8项开始，到最后结束，共7项 15-8=7
     //设置一个删除范围
-    NSRange range = NSMakeRange(g, self.viewArray.count - g);
+                     NSRange range = NSMakeRange(g, self.viewArray.count - g);
     //删除后数组
     [self.viewArray removeObjectsInRange:range];
     
